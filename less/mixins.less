@@ -1,14 +1,28 @@
 // Mixins in here
 
-.custom-btn(@bg-color:#FFBF27, @width:200px, @font-color:black){
-    display: block;
+.custom-btn(@bg-color:#FFBF27, @width:100px, @font-color:black){
     background-color: @bg-color;
-    margin: 0 10px 20px;
-    cursor: pointer;
     width: @width;
     height: 45px;
     font-size: 2rem;
-    border-radius: 5px;
+    border-radius: 18px;
     color:@font-color;
-
 }
+
+// .custom-layout(@justify, @align) {
+//     justify-content: @justify;
+//     align-items: @align;
+//   }
+
+
+//   .btn-parent{
+//     .custom-layout(flex-end, center);
+//     @media @mobile{
+//       flex-direction:column;
+//     }
+//   }
+  .btn {
+    .custom-btn(@button-bg, 85%, white); 
+    text-align: center;
+    padding-top: 4%;
+  }
