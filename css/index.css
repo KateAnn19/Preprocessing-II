@@ -1,12 +1,12 @@
 .btn {
   background-color: #17A2B8;
-  width: 85%;
+  width: 100%;
   height: 45px;
   font-size: 2rem;
   border-radius: 18px;
   color: white;
   text-align: center;
-  padding-top: 4%;
+  padding-top: 3%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -146,6 +146,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -209,9 +212,9 @@ header nav {
 @media (max-width: 500px) {
   header nav {
     display: flex;
-    padding-right: 15%;
-    padding-left: 15%;
+    width: 92vw;
     margin-right: 0;
+    justify-content: space-between;
   }
 }
 header nav a {
@@ -221,6 +224,9 @@ header nav a {
   text-decoration: none;
 }
 @media (max-width: 500px) {
+  header nav a {
+    display: flex;
+  }
 }
 .footer {
   width: 100%;
@@ -260,6 +266,7 @@ header nav a {
   .home .content-section {
     display: flex;
     flex-direction: column;
+    margin: 30px auto;
   }
 }
 .home .content-section .text-content {
@@ -275,11 +282,11 @@ header nav a {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  margin-left: 2%;
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 110%;
-    margin-right: -10%;
   }
 }
 .home .content-section .img-content img {
@@ -304,15 +311,7 @@ header nav a {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
-}
 @media (max-width: 500px) {
-  .home .inverse-content .img-content {
-    padding-left: 3%;
-    width: 115%;
-  }
 }
 .home .content-destination {
   width: 75%;
