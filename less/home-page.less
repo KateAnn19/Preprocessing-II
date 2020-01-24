@@ -3,7 +3,24 @@
 .top-content-section{
   border-bottom: 2px dashed @navigation-border;
   margin-top: 2%;
+
+  @media @mobile{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
 }
+
+.bus-banner{
+
+  @media @mobile{
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 96%;
+  }
+
+}
+
+
 
 
 .home {
@@ -14,19 +31,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 99%;
+        margin-left: 2%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width: 110%;
+        margin-right: -10%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          width: 85%;
+          
+        }
       }
     }
   }
@@ -34,6 +71,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+      display: flex;
+      flex-direction: column-reverse; 
+    }
 
     .text-content {
       padding-left: 1%;
@@ -43,12 +85,21 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+        padding-left: 3%;
+        width: 115%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile{
+      width: 95%;
+    }
 
     img {
       border-radius: 10px;
@@ -60,6 +111,13 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      width: 270%;
+      margin-left: 10%;
+    }
 
     .destination {
       width: 30%;

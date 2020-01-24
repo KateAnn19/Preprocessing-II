@@ -14,34 +14,39 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    
     // align-items: center;
   
     //@mobile is calling the escape created in the variables folder
-    
-    //@media @mobile{
-    //   flex-direction: column;
-    //   align-items: center;
-    //}//media can change styles depending on what's needed
+    @media @mobile{
+      flex-direction: column;
+      align-items: center;
+        // justify-content: space-between;
+    }//media can change styles depending on what's needed. media closing tag for header 
   
     h1 {
       font-size: 4rem;
       color: @shark;
-      padding-left: 28%;
+      padding-left: 22%;
       
       //@mobile is calling the escape created in the variables folder 
   
-    //   @media @mobile {
-    //     margin-bottom: 20px;
-    //   }//media
+      @media @mobile {
+        margin-bottom: 20px;
+        padding-left: 10%;
+      }//media
 
     }// h1
   
     nav {
-        padding-right: 28%;
+        padding-right: 2%;
+        margin-right: 21%;
 
         @media @mobile {
-        margin-left: 0;
+            // border: 1px solid green;
+            display: flex;
+            padding-right: 15%;
+            padding-left: 15%;
+            margin-right: 0;
         }//this is the closing media tag for the media inside the nav
 
         a {
@@ -49,6 +54,13 @@ header {
         font-size: 1.8rem;
         color: black;
         text-decoration: none;
+        
+
+        @media @mobile {
+            // border: 1px solid black;
+            // justify-content: space-between;
+            // padding: 1% 4% 1% 4%;
+        }
         }//this is the closing tag for the a inside the nav
 
     // .first-anchor {
